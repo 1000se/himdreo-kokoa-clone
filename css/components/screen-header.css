@@ -25,7 +25,17 @@
   left: 21px;
   bottom: 22px;
 }
-
+@keyframes biggerSearch {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 @keyframes rotateGear {
   from {
     transform: none;
@@ -34,7 +44,26 @@
     transform: rotateZ(360deg);
   }
 }
-
+@keyframes shakeMusic {
+  0% {
+    transform: scale(1);
+    transform: skew(-30deg, 40deg);
+  }
+  50% {
+    transform: scale(1.5);
+    transform: skew(30deg, -40deg);
+  }
+  100% {
+    transform: scale(1);
+    transform: skew(30deg, 40deg);
+  }
+}
+.screen-header__icons .fa-search:hover {
+  animation: biggerSearch 1.5s ease-in-out infinite;
+}
 .screen-header__icons .fa-gear:hover {
   animation: rotateGear 1s linear infinite;
+}
+.screen-header__icons .fa-music:hover {
+  animation: shakeMusic 1s ease-in infinite;
 }

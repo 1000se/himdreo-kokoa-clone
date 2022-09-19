@@ -15,19 +15,37 @@
   font-size: 18px;
   color: rgba(0, 0, 0, 0.5);
 }
-.open-chat__header {
-  display: flex;
-  justify-content: space-between;
+.recommended-channels__header {
   opacity: 0.8;
   margin-bottom: 25px;
 }
-.open-chat__header span {
-  opacity: 0.6;
-}
-.open-post {
+
+.recommended-channels-post {
+  height: 150px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  overflow-x: scroll;
+  position: relative;
+}
+.recommended-channels-post > div {
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.recommended-channels-pic {
+  border-radius: 35px;
+}
+.recommended-channels-post > div > button {
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  font-size: 10px;
+  width: 75px;
+  height: 20px;
+  position: absolute;
+  bottom: -8px;
 }
 .open-post__title {
   font-weight: 600;
@@ -108,5 +126,5 @@
 
 .open-post__heart-count:hover i {
   will-change: transform;
-  animation: heartBeat 1s linear infinite;
+  animation: heartBeat 1.5s linear infinite;
 }

@@ -16,3 +16,12 @@
 .settings__setting-column:last-child {
   opacity: 0.5;
 }
+.settings__log-out {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+.settings__log-out span {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
